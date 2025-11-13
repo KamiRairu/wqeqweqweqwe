@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Words of Affirmation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+           <!-- 🌸 Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="{{ url_for('static', filename='music/bg-music.mp3') }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  <div class="container">
+    <h1>Love Letter 💌</h1>
+
+    <!-- Bottom image (the letter) -->
+    <div class="image-container bottom">
+      <img src="{{ url_for('static', filename='images/letter.png') }}" alt="Love Letter" class="letter-img">
+    </div>
+
+    <!-- Return button -->
+    <a href="{{ url_for('month1') }}" class="back"> Back </a>
+  </div>
+</body>
+</html>

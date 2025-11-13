@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Month 1 - Love Languages</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+       <!-- 🌸 Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="{{ url_for('static', filename='music/mo1.mp3') }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  <div class="container">
+    <h1>Happy First Monthsary ❤️</h1>
+    <p>Open the things you received this month ❤️</p>
+
+    <div class="buttons">
+      <a href="{{ url_for('words_of_affirmation') }}" class="love-btn">Love Letter</a>
+      <a href="{{ url_for('receiving_gifts') }}" class="love-btn">Gift</a>
+      <a href="{{ url_for('physical_touch') }}" class="love-btn">Ticket</a>
+    </div>
+
+    <a href="{{ url_for('home') }}" class="back"> Back to Home</a>
+  </div>
+</body>
+</html>

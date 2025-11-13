@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Languages Journal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <!-- 🌸 Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="{{ url_for('static', filename='music/tiny.mp3') }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+  <div class="container">
+    <h1>Relationship Journey</h1>
+
+    <div class="month-grid">
+      <a href="{{ url_for('month1') }}" class="month-box active">Month 1</a>
+      <div class="month-box">Month 2</div>
+      <div class="month-box">Month 3</div>
+      <div class="month-box">Month 4</div>
+      <div class="month-box">Month 5</div>
+      <div class="month-box">Month 6</div>
+      <div class="month-box">Month 7</div>
+      <div class="month-box">Month 8</div>
+      <div class="month-box">Month 9</div>
+      <div class="month-box">Month 10</div>
+      <div class="month-box">Month 11</div>
+      <div class="month-box">Month 12</div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
